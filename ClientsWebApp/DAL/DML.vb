@@ -2,6 +2,7 @@ Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Configuration
 Imports System.Web
+
 Public Class DML
 
 
@@ -77,6 +78,26 @@ Public Class DML
         End Try
         cnn.Close()
     End Sub
+
+
+    Public Function GetClients() As Object
+        Dim cnn As New SqlClient.SqlConnection(Connection.GetConnection)
+        Dim cmd As New SqlClient.SqlCommand("SP_GETCLIENTS", cnn)
+        cmd.CommandType = CommandType.StoredProcedure
+        Dim info As Object
+        Try
+            cnn.Open()
+            Dim dr As SqlDataReader
+            dr = cmd.ExecuteReader
+            Return dr
+
+            dr.Close()
+
+        Catch ex As Exception
+        End Try
+        cnn.Close()
+    End Function
+
 
     Public Sub DeleteClient(ByVal Clientid As Integer, ByRef FirstName As String, ByRef LastName As String, ByRef Email As Integer, ByRef Phone As String, ByRef OfficeAddress As String)
         Dim cnn As New SqlClient.SqlConnection(Connection.GetConnection)

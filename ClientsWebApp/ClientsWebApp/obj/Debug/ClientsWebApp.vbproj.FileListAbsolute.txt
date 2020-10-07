@@ -78,3 +78,7 @@ C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\obj\Debug\
 C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\obj\Debug\ClientsWebApp.dll
 C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\obj\Debug\WebForms_Basic.xml
 C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\obj\Debug\ClientsWebApp.pdb
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\bin\DAL.dll
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\bin\DAL.pdb
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\bin\System.Data.SqlClient.dll
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\ClientsWebApp\bin\System.Data.SqlClient.xml

@@ -23,7 +23,7 @@
                             <div class="col-md-4 col-md-offset-1">
                                 <div class="form-group">
                                     <asp:Label  Text="Nombre" runat="server"></asp:Label>
-                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm"></asp:TextBox>
+                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm" ID="ClientName"></asp:TextBox>
 
                                 </div>
 
@@ -32,7 +32,7 @@
                               <div class="col-md-4 col-md-offset-1">
                                 <div class="form-group">
                                     <asp:Label  Text="Apellido" runat="server"></asp:Label>
-                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm"></asp:TextBox>
+                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm" ID="ClientLastName"></asp:TextBox>
 
                                 </div>
 
@@ -43,7 +43,7 @@
                             <div class="col-md-4 col-md-offset-1">
                                 <div class="form-group">
                                     <asp:Label  Text="Email" runat="server"></asp:Label>
-                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm"></asp:TextBox>
+                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm" ID="ClientEmail"></asp:TextBox>
 
                                 </div>
 
@@ -52,7 +52,7 @@
                               <div class="col-md-4 col-md-offset-1">
                                 <div class="form-group">
                                     <asp:Label  Text="Telefono" runat="server"></asp:Label>
-                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm"></asp:TextBox>
+                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm" ID="ClientPhone"></asp:TextBox>
 
                                 </div>
 
@@ -64,7 +64,7 @@
                             <div class="col-md-4 col-md-offset-1">
                                 <div class="form-group">
                                     <asp:Label  Text="Dirección" runat="server"></asp:Label>
-                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm"></asp:TextBox>
+                                    <asp:TextBox runat="server" Enabled="true" CssClass="form-control input-sm" ID="ClientAddress"></asp:TextBox>
 
                                 </div>
 
@@ -76,8 +76,8 @@
                           <div class="row">
                             <div class="col-md-12 col-md-offset-1 center">
                                 <div class="form-group">
-                                     <asp:Button  runat="server" CssClass="btn btn-success" Text="Guardar"/>
-
+                                     <asp:Button  runat="server" CssClass="btn btn-success" Text="Guardar"  ID="Save_Btn"/>
+                                     <asp:Label ID="Respuesta" runat="server" ></asp:Label>
                                 </div>
 
                             </div>

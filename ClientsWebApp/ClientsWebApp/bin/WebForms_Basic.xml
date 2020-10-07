@@ -37,6 +37,69 @@ ClientsWebApp
  Devuelve el objeto de registro Asp.
  </summary>
 </member>
+<member name="F:ClientsWebApp.Clients._ClientName">
+<summary>
+Control ClientName.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ClientsWebApp.Clients._ClientLastName">
+<summary>
+Control ClientLastName.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ClientsWebApp.Clients._ClientEmail">
+<summary>
+Control ClientEmail.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ClientsWebApp.Clients._ClientPhone">
+<summary>
+Control ClientPhone.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ClientsWebApp.Clients._ClientAddress">
+<summary>
+Control ClientAddress.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ClientsWebApp.Clients._Save_Btn">
+<summary>
+Control Save_Btn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ClientsWebApp.Clients._Respuesta">
+<summary>
+Control Respuesta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ClientsWebApp.Clients._GridView1">
 <summary>
 Control GridView1.

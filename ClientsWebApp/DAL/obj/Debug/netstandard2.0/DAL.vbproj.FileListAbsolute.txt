@@ -3,3 +3,7 @@ C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\bin\Debug\netstandar
 C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\obj\Debug\netstandard2.0\DAL.vbprojAssemblyReference.cache
 C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
 C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.vb
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\obj\Debug\netstandard2.0\DAL.vbproj.CoreCompileInputs.cache
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\Users\casa\Documents\fusai\Clients_App\ClientsWebApp\DAL\obj\Debug\netstandard2.0\DAL.pdb
