@@ -12,8 +12,6 @@ Public Class Clients
             GridView1.DataBind()
 
         End If
-
-        '   GridView1.Columns(0).Visible = False
     End Sub
 
     Protected Sub Save_Btn_Click(sender As Object, e As EventArgs) Handles Save_Btn.Click
@@ -45,30 +43,23 @@ Public Class Clients
     End Sub
 
     Protected Sub GridView1_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles GridView1.RowEditing
-        'GridView1.EditIndex = e.NewEditIndex
-        'GridView1.DataSource = dal.GetClients()
-        'GridView1.DataBind()
+        GridView1.EditIndex = e.NewEditIndex
+        GridView1.DataSource = dal.GetClients()
+        GridView1.DataBind()
 
     End Sub
 
     Protected Sub GridView1_RowUpdating(sender As Object, e As GridViewUpdateEventArgs) Handles GridView1.RowUpdating
         Dim row As GridViewRow = GridView1.Rows(e.RowIndex)
-        '  Dim ClientId As String = Convert.ToInt32(GridView1.Rows(e.RowIndex).Cells(1).Text)
 
-        '  Dim customerId As Integer = Convert.ToInt32(GridView1.DataKeys(e.RowIndex).Values(0))
-        '  Dim ClientId As String = GridView1.Rows(e.RowIndex).Cells(0).Text
-
-        'Dim ClientId As String = e.NewValues("ClientId")
         Dim ClientId As String = TryCast(row.FindControl("HdnClientId"), Label).Text
         Dim name As String = TryCast(row.FindControl("FirstName"), TextBox).Text
         Dim lastname As String = TryCast(row.FindControl("LastName"), TextBox).Text
         Dim email As String = TryCast(row.FindControl("Email"), TextBox).Text
         Dim Phone As String = TryCast(row.FindControl("Phone"), TextBox).Text
         Dim address As String = TryCast(row.FindControl("OfficeAddress"), TextBox).Text
-        Dim dal As New DAL.DML
-        Dim cid As Integer
-        cid = Convert.ToInt64(ClientId)
-        dal.UpdateClient(cid, name, lastname, email, Phone, address)
+
+        dal.UpdateClient(Convert.ToInt64(ClientId), name, lastname, email, Phone, address)
 
 
 
@@ -86,26 +77,17 @@ Public Class Clients
 
 
 
-    Protected Sub OnUpdate2(sender As Object, e As GridViewUpdateEventArgs)
+
+    Protected Sub GridView1_RowCancelingEdit(sender As Object, e As GridViewCancelEditEventArgs) Handles GridView1.RowCancelingEdit
+        GridView1.EditIndex = -1
+        GridView1.DataSource = dal.GetClients()
+        GridView1.DataBind()
+    End Sub
+
+    Protected Sub GridView1_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles GridView1.RowDeleting
         Dim row As GridViewRow = GridView1.Rows(e.RowIndex)
-        Dim name As String = TryCast(row.FindControl("FirstName"), TextBox).Text
 
-        GridView1.EditIndex = -1
-        GridView1.DataSource = dal.GetClients()
-        GridView1.DataBind()
-    End Sub
-    Protected Sub OnUpdate(sender As Object, e As EventArgs)
-        'Dim row As GridViewRow = TryCast(TryCast(sender, LinkButton).NamingContainer, GridViewRow)
-        'Dim name As String = TryCast(row.Cells(4).Controls(0), TextBox).Text
-
-        GridView1.EditIndex = -1
-        GridView1.DataSource = dal.GetClients()
-        GridView1.DataBind()
-    End Sub
-
-    Protected Sub OnCancel(sender As Object, e As EventArgs)
-        GridView1.EditIndex = -1
-        GridView1.DataSource = dal.GetClients()
-        GridView1.DataBind()
+        Dim ClientId As String = TryCast(row.FindControl("HdnClientId"), Label).Text
+        dal.DeleteClient(Convert.ToInt64(ClientId))
     End Sub
 End Class

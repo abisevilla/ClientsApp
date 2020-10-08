@@ -101,7 +101,7 @@ Public Class DML
     End Function
 
 
-    Public Sub DeleteClient(ByVal Clientid As Integer, ByRef FirstName As String, ByRef LastName As String, ByRef Email As Integer, ByRef Phone As String, ByRef OfficeAddress As String)
+    Public Sub DeleteClient(ByVal Clientid As Integer)
         Dim cnn As New SqlClient.SqlConnection(Connection.GetConnection)
         Dim cmd As New SqlClient.SqlCommand("SP_DELETE", cnn)
         cmd.Parameters.Add("Clientid", SqlDbType.Int).Value = Clientid
