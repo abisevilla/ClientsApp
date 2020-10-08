@@ -74,10 +74,16 @@
                         </div>
 
                           <div class="row">
-                            <div class="col-md-12 col-md-offset-1 center">
+                            <div class="col-md-4 col-md-offset-1 center">
                                 <div class="form-group">
                                      <asp:Button  runat="server" CssClass="btn btn-success" Text="Guardar"  ID="Save_Btn"/>
                                      <asp:Label ID="Respuesta" runat="server" ></asp:Label>
+                                </div>
+
+                            </div>
+                                <div class="col-md-4 col-md-offset-1 center">
+                                <div class="form-group">
+                                    <asp:Button  runat="server" CssClass="btn btn-info" Text="Reporte"  ID="ReportBtn"/>
                                 </div>
 
                             </div>

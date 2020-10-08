@@ -90,4 +90,8 @@ Public Class Clients
         Dim ClientId As String = TryCast(row.FindControl("HdnClientId"), Label).Text
         dal.DeleteClient(Convert.ToInt64(ClientId))
     End Sub
+
+    Protected Sub ReportBtn_Click(sender As Object, e As EventArgs) Handles ReportBtn.Click
+        Server.Transfer("ReportPage.aspx", True)
+    End Sub
 End Class

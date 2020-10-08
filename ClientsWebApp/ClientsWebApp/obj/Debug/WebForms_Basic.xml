@@ -100,6 +100,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ClientsWebApp.Clients._ReportBtn">
+<summary>
+Control ReportBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ClientsWebApp.Clients._GridView1">
 <summary>
 Control GridView1.
@@ -108,6 +117,80 @@ Control GridView1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member>
+<member name="F:ClientsWebApp.ReportPage._CrystalReportViewer1">
+<summary>
+Control CrystalReportViewer1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="T:ClientsWebApp.DB">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:ClientsWebApp.DB.SP_GETCLIENTSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ClientsWebApp.DB.SP_GETCLIENTSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ClientsWebApp.DB.SP_GETCLIENTSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ClientsWebApp.DBTableAdapters.SP_GETCLIENTSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ClientsWebApp.DBTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:ClientsWebApp.DBTableAdapters.TableAdapterManager.UpdateUpdatedRows(ClientsWebApp.DB,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:ClientsWebApp.DBTableAdapters.TableAdapterManager.UpdateInsertedRows(ClientsWebApp.DB,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:ClientsWebApp.DBTableAdapters.TableAdapterManager.UpdateDeletedRows(ClientsWebApp.DB,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:ClientsWebApp.DBTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:ClientsWebApp.DBTableAdapters.TableAdapterManager.UpdateAll(ClientsWebApp.DB)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:ClientsWebApp.DBTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:ClientsWebApp.DBTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
 </member>
 <member name="F:ClientsWebApp.SiteMaster._MainContent">
 <summary>

@@ -77,6 +77,15 @@ Partial Public Class Clients
     Protected WithEvents Respuesta As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Control ReportBtn.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ReportBtn As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control GridView1.
     '''</summary>
     '''<remarks>
