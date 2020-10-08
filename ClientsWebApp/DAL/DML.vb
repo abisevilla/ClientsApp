@@ -33,10 +33,12 @@ Public Class DML
         End Try
         cnn.Close()
     End Function
-    Public Sub UpdateClient(ByVal Clientid As Integer, ByRef FirstName As String, ByRef LastName As String, ByRef Email As Integer, ByRef Phone As String, ByRef OfficeAddress As String)
+    Public Sub UpdateClient(ByVal Clientid As Integer, ByRef FirstName As String, ByRef LastName As String, ByRef Email As String, ByRef Phone As String, ByRef OfficeAddress As String)
         Dim cnn As New SqlClient.SqlConnection(Connection.GetConnection)
         Dim cmd As New SqlClient.SqlCommand("SP_UPDATE", cnn)
         cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.Add("Clientid", SqlDbType.Int).Value = Clientid
+
         cmd.Parameters.Add("FirstName", SqlDbType.VarChar, 255).Value = FirstName
 
         cmd.Parameters.Add("LastName", SqlDbType.VarChar, 255).Value = LastName

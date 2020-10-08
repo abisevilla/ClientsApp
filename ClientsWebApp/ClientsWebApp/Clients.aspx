@@ -88,7 +88,83 @@
 
                            <div class="row">
                             <div class="col-md-12 col-md-offset-1 center">
-                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="true" CssClass="table table-striped"></asp:GridView>
+                                <asp:GridView ID="GridView1" runat="server" CssClass="table table-striped"  BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" OnRowEditing="OnRowEditing" AutoGenerateColumns="False" AutoGenerateEditButton="True">
+                                    <AlternatingRowStyle BackColor="#CCCCCC" />
+                                    <FooterStyle BackColor="#CCCCCC" />
+                                    <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                                    <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                    <SortedAscendingHeaderStyle BackColor="#808080" />
+                                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                    <SortedDescendingHeaderStyle BackColor="#383838" />
+                                    <Columns>
+                                      
+                                        <asp:TemplateField Visible="false">
+                                            <ItemTemplate>
+                                                  <asp:Label id="HdnClientId" runat ="server" text='<%# Eval("ClientId")%>'></asp:Label>
+                                            
+
+                                                </ItemTemplate>
+                                        </asp:TemplateField>
+                                       
+
+                                        <asp:TemplateField HeaderText="Nombre" >
+                                            <ItemTemplate>
+                                                <%#Eval("FirstName") %>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                 <asp:TextBox ID="FirstName" Text='<%#Eval("FirstName") %>' runat="server"></asp:TextBox>
+                                                </EditItemTemplate>
+                                        </asp:TemplateField>                                  
+
+
+
+
+
+                                          <asp:TemplateField HeaderText="Apellido" >
+                                            <ItemTemplate>
+                                                <%#Eval("LastName") %>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                 <asp:TextBox ID="LastName" Text='<%#Eval("LastName") %>' runat="server"></asp:TextBox>
+                                                </EditItemTemplate>
+                                        </asp:TemplateField>
+                                                                            
+
+
+                                             <asp:TemplateField HeaderText="Correo" >
+                                            <ItemTemplate>
+                                                <%#Eval("Email") %>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                 <asp:TextBox ID="Email" Text='<%#Eval("Email") %>' runat="server"></asp:TextBox>
+                                                </EditItemTemplate>
+                                        </asp:TemplateField>
+
+
+                                               <asp:TemplateField HeaderText="Teléfono" >
+                                            <ItemTemplate>
+                                                <%#Eval("Phone") %>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                 <asp:TextBox ID="Phone" Text='<%#Eval("Phone") %>' runat="server"></asp:TextBox>
+                                                </EditItemTemplate>
+                                        </asp:TemplateField>                  
+
+                                          <asp:TemplateField HeaderText="Teléfono" >
+                                            <ItemTemplate>
+                                                <%#Eval("OfficeAddress") %>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                 <asp:TextBox ID="OfficeAddress" Text='<%#Eval("OfficeAddress") %>' runat="server"></asp:TextBox>
+                                                </EditItemTemplate>
+                                        </asp:TemplateField>
+
+
+
+                                    </Columns>
+                                </asp:GridView>
 
                             </div>
 
